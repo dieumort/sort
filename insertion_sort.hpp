@@ -8,7 +8,11 @@
 #include <iterator>
 #include <boost/concept_check.hpp>
 
+//-----------------------------------------------------------------------------
+
 namespace sort {
+
+//-----------------------------------------------------------------------------
 
 /**
  * insertion sort (std::less)
@@ -21,6 +25,8 @@ void insertion_sort(RandomAccessIterator begin, RandomAccessIterator end);
  */
 template <typename RandomAccessIterator, typename Compare>
 void insertion_sort(RandomAccessIterator begin, RandomAccessIterator end, Compare compare);
+
+//-----------------------------------------------------------------------------
 
 /**
  * Impl of insertion sort (std::less)
@@ -70,6 +76,12 @@ void insertion_sort(RandomAccessIterator begin, RandomAccessIterator end, Compar
   }
 }
 
+//-----------------------------------------------------------------------------
+
 } // namespace sort
 
-#endif
+//-----------------------------------------------------------------------------
+
+#endif // SORT_INSERTION_SORT_HPP_
+
+//-----------------------------------------------------------------------------

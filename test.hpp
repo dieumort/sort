@@ -59,7 +59,7 @@ void test(std::function<void (RandomAccessIterator, RandomAccessIterator)> & sor
     }
 
     elapsed_time *= 0.000000001 / count;
-    std::cout << (boost::format("%12d %.9f") % *size_it % elapsed_time) << std::endl;
+    std::cout << (boost::format("%8d %.9f") % *size_it % elapsed_time) << std::endl;
   }
 }
 
